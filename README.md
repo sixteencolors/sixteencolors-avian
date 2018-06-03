@@ -1,2 +1,17 @@
-# sixteencolors-avian
-A proposal for a next-generation 16c built on Avian, using TypeScript, Less, and a component design model.
+# SixteenColors
+A proposal for a next-generation 16c built on Avian using a component design model.
+# Deployment
+SixteenColors is packaged as an NPM module. The installation and execution of its application server are very straight forward.
+
+## Install
+
+### Clone Git Repo
+     git clone https://github.com/sixteencolors/sixteencolors-avian.git
+
+### Install Dependencies
+    yarn install
+## Start Server
+    yarn start
+
+# Copyright
+2004-2018 SixteenColors Ansi & Ascii Artwork Archive
