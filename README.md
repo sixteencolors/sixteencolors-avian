@@ -1,5 +1,5 @@
 # SixteenColors
-A proposal for a next-generation 16c built on Avian using a component design model.
+A proposal for a next-generation 16c built on Avian using a scalable component design model
 # Deployment
 SixteenColors is packaged as an NPM module. The installation and execution of its application server are very straight forward.
 
