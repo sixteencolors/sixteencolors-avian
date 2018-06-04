@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui")
+
+        title SixteenColors Ansi &amp; Ascii Artwork Archive
+
+        block style
+
+            style
+                include:less sixteencolors.style.less
+
+    body
+
+        v-app(dark)
+
+            #header
+
+                v-toolbar(dark extended fluid).black
+
+                    v-menu(offset-y)
+
+                        v-toolbar-side-icon(dark slot="activator")
+                            
+                            v-list(light v-if="modules")
+                                v-list-tile(v-for="module in modules" @click="")
+                                    v-list-tile-title(v-text="module.title")
+                                
+                    v-toolbar-title(slot="extension").white--text SixteenColors #{params.component.toUpperCase()}
+                    
+                    v-spacer
+                    
+                    v-btn(light icon)
+                        v-icon search
+
+                    v-btn(light icon)
+                        v-icon apps
+
+                    v-btn(light icon)
+                        v-icon refresh
+
+                    v-btn(light icon)
+                        v-icon more_vert
+
+            block view
+
+            #footer
+
+                v-footer(fixed)
+
+
+        block component
+
+            script(src="/sixteencolors.component.bundle.js")

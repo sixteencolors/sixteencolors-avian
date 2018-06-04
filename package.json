@@ -1,0 +1,27 @@
+{
+  "name": "sixteencolors-avian",
+  "version": "1.0.0",
+  "description": "A proposal for a next-generation 16c built on Avian using a scalable component design model # Deployment SixteenColors is packaged as an NPM module. The installation and execution of its application server are very straight forward.",
+  "scripts": {
+    "start": "node node_modules/.bin/avian"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixteencolors/sixteencolors-avian.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sixteencolors/sixteencolors-avian/issues"
+  },
+  "homepage": "https://github.com/sixteencolors/sixteencolors-avian#readme",
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^10.0.3",
+    "@types/pug": "^2.0.4",
+    "avian": "git+https://github.com/flypapertech/avian.git",
+    "material-design-icons": "^3.0.1",
+    "vue": "^2.5.16",
+    "vuetify": "^1.0.18"
+  }
+}

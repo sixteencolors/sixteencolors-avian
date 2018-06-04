@@ -5,7 +5,7 @@ SixteenColors is packaged as an NPM module. The installation and execution of it
 
 ## Install
 
-### Clone Git Repo
+### Download Git Repo
      git clone https://github.com/sixteencolors/sixteencolors-avian.git
 
 ### Install Dependencies

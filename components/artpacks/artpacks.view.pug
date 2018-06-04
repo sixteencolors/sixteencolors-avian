@@ -1,0 +1,17 @@
+extends ../sixteencolors.layout.pug
+
+append style
+
+    style
+        include:less artpacks.style.less
+
+append view 
+
+    #auth.grey.lighten-3
+
+        v-content(fluid)
+
+
+append component
+
+    script(src="/artpacks/artpacks.component.bundle.js")
