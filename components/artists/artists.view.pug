@@ -1,0 +1,17 @@
+extends ../sixteencolors.layout.pug
+
+append style
+
+    style
+        include:less artists.style.less
+
+append view 
+
+    #artists.grey.lighten-3
+
+        v-content(fluid)
+
+
+append component
+
+    script(src="/artists/artists.component.bundle.js")
