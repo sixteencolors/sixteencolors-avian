@@ -5,15 +5,17 @@
 @import "/node_modules/material-design-icons/iconfont/material-icons.css";
 
 // SixteenColors Global Web Fonts
-  
-.btn(@size: small) {
-    font-family: "8x16";
+
+@font-face {
+
+    font-family: '8x16';
     src: url('/assets/fonts/dos437-webfont.woff');
     src: local('Ã¢ËœÂº'), url('/assets/fonts/dos437-webfont.woff') format('woff'), url('/assets/fonts/dos437-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-size: @size;
 }
+
+@dos-font: '8x16' !important;
 
 // SixteenColors Global Colors
 
@@ -25,6 +27,8 @@ html {
 }
 body {
     background-color: @background;
+    font-family: @dos-font;
+    font-size: large;
 }
 
 .toolbar__content img {
