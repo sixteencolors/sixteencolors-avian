@@ -1,0 +1,11 @@
+
+mixin render(artwork)
+
+    script.
+
+        var retina = window.devicePixelRatio > 1;
+
+        AnsiLove.render("#{ artwork }", function (canvas, sauce) {
+            document.getElementById("artwork").appendChild(canvas);
+        }, {"bits": "9", "2x": (retina ? 1 : 0)});
+

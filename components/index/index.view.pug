@@ -11,7 +11,15 @@ append view
 
         v-content(fluid)
 
+            include ../../private/ansilove.pug
+
+            #artwork
+
+            +render("https://raw.githubusercontent.com/ansilove/ansilove.js/master/example/cl!-al02.ans")
+
 
 append component
+
+    script(src="https://raw.githubusercontent.com/ansilove/ansilove.js/master/ansilove.js")
 
     script(src="/index/index.component.bundle.js")
