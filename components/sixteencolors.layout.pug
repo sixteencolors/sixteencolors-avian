@@ -19,35 +19,24 @@ html(lang="en")
 
                 v-toolbar(dark extended fluid).black
 
-                    v-menu(offset-y)
-
-                        v-toolbar-side-icon(dark slot="activator")
-                            
-                            v-list(light v-if="modules")
-                                v-list-tile(v-for="module in modules" @click="")
-                                    v-list-tile-title(v-text="module.title")
-                                
-                    v-toolbar-title(slot="extension").white--text SixteenColors #{params.component.toUpperCase()}
+                    img(src="/assets/images/sixteencolors-logo-small.png")
                     
                     v-spacer
                     
-                    v-btn(light icon)
-                        v-icon search
-
-                    v-btn(light icon)
-                        v-icon apps
-
-                    v-btn(light icon)
-                        v-icon refresh
-
-                    v-btn(light icon)
-                        v-icon more_vert
+                    v-toolbar-items
+                        v-btn(flat href="/artpacks") Artpacks
+                        v-btn(flat href="/artists") Artists
+                        v-btn(flat href="/groups") Groups
 
             block view
 
             #footer
 
-                v-footer(fixed)
+                v-footer(dark float).black
+                    
+                    v-spacer
+
+                    div &copy; #{ new Date().getFullYear() }
 
 
         block component
